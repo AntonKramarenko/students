@@ -1,0 +1,65 @@
+$userNameColor: #828282;
+
+.blue {
+  color: #4285f4;
+}
+
+.green {
+  color: #0f9d58;
+}
+
+.yelov {
+  color: #e2b534;
+}
+
+.red {
+  color: #db4437;
+}
+
+.userItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+
+  width: 90%;
+  margin: 0 auto;
+
+  &-checkbox {
+    margin: 20px;
+  }
+
+  &-name {
+    width: 330px;
+    color: $userNameColor;
+  }
+  &-id {
+    color: $userNameColor;
+    width: 100px;
+  }
+  &-сlass {
+    color: $userNameColor;
+    width: 40px;
+  }
+
+  &-score {
+    color: $userNameColor;
+    width: 100px;
+  }
+
+  &-speed {
+    color: $userNameColor;
+    width: 110px;
+    padding-right: 50px;
+  }
+  &-parents {
+    width: 300px;
+    color: $userNameColor;
+    padding-right: 140px;
+  }
+}
+
+.userItem:nth-child(even) {
+  background-color: #f9f9f9;
+  box-shadow: 0px 1px 4px rgba(60, 52, 135, 0.15);
+}

@@ -1,0 +1,48 @@
+$ColorNavigation: #777777;
+$ActiveColor: #fff;
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  padding: 0 50px;
+  top: 0;
+  border: 2px solid red;
+  font-size: 14px;
+
+  &-navigation {
+    color: $ColorNavigation;
+
+    &_list {
+      display: flex;
+    }
+
+    &_item {
+      list-style-type: none;
+      margin: 10px;
+      text-transform: uppercase;
+
+      & a {
+        text-decoration: none;
+        color: $ColorNavigation;
+      }
+      & a:hover {
+        text-decoration: underline;
+      }
+      & a.select {
+        font-weight: bold;
+        color: $ActiveColor;
+        background-color: #a6192e;
+        padding: 6px 12px;
+      }
+    }
+  }
+
+  &-profile {
+    border-radius: 50px;
+    height: 32px;
+    width: 32px;
+    background-color: red;
+  }
+}

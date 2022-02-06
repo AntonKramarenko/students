@@ -1,0 +1,12 @@
+$backgroundSubHeader: rgba(91, 91, 91, 1);
+
+.subHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: $backgroundSubHeader;
+  text-transform: uppercase;
+  gap: 20px;
+}
