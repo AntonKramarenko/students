@@ -2,6 +2,8 @@ import react from "react";
 import './UserTests.scss'
 
 function UserTests(props) {
+
+
     return (
         <table className="userTests">
             <tbody>
@@ -17,8 +19,9 @@ function UserTests(props) {
                     <td className="userItem-name">Absent</td>
                 </tr>
                 {props.tests.map((test, index) => {
+
                     return (
-                        <tr key={index} >
+                        <tr key={index} className="userTests-data">
                             <td className="userItem-name">{index + 1}.</td>
                             <td className="userItem-name">{test.label}</td>
                             <td className="userItem-name">{test.score}</td>
