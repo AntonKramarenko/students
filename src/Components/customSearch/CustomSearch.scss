@@ -1,0 +1,25 @@
+@import '../../utils/colors.scss';
+
+.customSearch{
+    max-width: 500px;
+    width: 100%;
+    height: 32px;
+    padding: 6px 12px;
+    background-color: $color-bg-openItem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__field{
+        border: none;
+        width: 100%;
+        padding: 3px 0;
+        background-color: $color-bg-openItem ;
+        
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+}

@@ -1,0 +1,15 @@
+@import '../../utils/colors.scss';
+.clearButton{
+    font-weight: $fw-bold;
+    color: $color-primary-midl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    svg {
+        margin-right: 5px;
+    }
+}

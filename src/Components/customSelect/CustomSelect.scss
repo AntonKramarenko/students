@@ -1,0 +1,54 @@
+@import '../../utils/colors.scss';
+
+.customSelect{
+    width: 104px;
+    height: 32px;
+    color: $color-primary-midl;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+
+    &__title{
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg{
+            margin-left: 5px;
+        }
+    }
+
+    &__body{
+        display: none;
+        position: absolute;
+        top: 27px;
+        width: 104px;
+        background-color: white;
+        justify-content: center;
+        box-shadow: $shadow;
+
+
+        &-item{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            color: $color-primary-dark;
+        }
+
+        &-item:hover{
+            transition: all 0.5s;
+            background-color: $color-primary-midl ;
+            color: $color-primary-dark;
+        }
+    }
+
+
+}
+
+.active-select{
+    display: block;
+}
