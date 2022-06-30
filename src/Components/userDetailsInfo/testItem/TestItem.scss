@@ -1,0 +1,21 @@
+@import '../../../utils/colors.scss';
+
+.testItem{
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 22px 300px 48px 113px 68px 120px 150px 110px 48px;
+    gap: 14px;
+    font-size: 16px;
+    border: 1px solid $color-bg-openItem;
+
+    &__checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.testItem:hover{
+    background-color: $color-bg-howerItem;
+    border: 1px solid rgba(166, 25, 46, 1);
+}

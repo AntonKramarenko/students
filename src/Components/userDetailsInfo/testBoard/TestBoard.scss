@@ -1,0 +1,58 @@
+@import '../../../utils/colors.scss';
+
+.testBoard{
+    border-top: 1px solid red;
+    border-bottom: 2px solid red;
+    width: 1100px;
+    padding: 12px 0;
+
+    &__results {
+        display: grid;
+        grid-template-columns: 40px repeat(4, 135px);
+        gap: 10px;
+        font-size: 12px;
+        text-transform: uppercase; 
+        list-style-type: none;
+
+
+        li{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            div{
+                width: 12px;
+                height: 12px;
+                border-radius:50% ;
+                margin-right: 5px;
+            }
+        }
+
+        li:nth-child(2){
+           color:  $color-result-1;
+           div{ background-color: $color-result-1}}
+        li:nth-child(3){
+            color:  $color-result-2;
+            div{ background-color: $color-result-2}}
+         li:nth-child(4){
+            color:  $color-result-3;
+            div{ background-color: $color-result-3}
+         }
+         li:nth-child(5){
+            color:  $color-result-4;
+            div{ background-color: $color-result-4}
+         }  
+    }
+
+    &__results-speed {
+        li:nth-child(4){
+            color:  $color-result-4;
+            div{background-color: $color-result-4}}
+     }
+
+    //  &__board{
+    //     margin-top: 15px;
+    //     display: grid;
+    //     grid-template-columns: 22px 300px 48px 113px 68px 120px 150px 110px 48px;
+    //     gap: 14px;
+    //  }
+}

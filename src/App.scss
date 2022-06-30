@@ -26,9 +26,22 @@ body {
 }
 
 .pageContainer{
-    border:  1px solid black;
     padding: 8px 40px 58px 40px;
 }
+
+.result-exellent{
+    color: $color-result-1;
+}
+.result-good{
+    color: $color-result-2;
+}
+.result-weak{
+    color: $color-result-3;
+}
+.result-unsatisfactory{
+    color: $color-result-4;
+}
+
 
 
   

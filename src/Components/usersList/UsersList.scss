@@ -1,0 +1,12 @@
+@import '../../utils/colors.scss';
+
+.usersList {
+    border: 1px solid black;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.usersList .userItem:nth-child(even){
+    background-color: $color-primary-light;
+    box-shadow: $shadow;
+}

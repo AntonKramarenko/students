@@ -1,0 +1,38 @@
+@import '../../utils/colors.scss';
+.userDetailsInfo{
+    background-color: $color-bg-openItem;
+    padding: 20px 60px;
+
+    &__person{
+        display: flex;
+    }
+
+    &__name{
+        margin-right: 15px;
+        text-transform: uppercase;
+
+        b {margin-left: 10px}
+    }
+
+    &__id > b{
+        margin-left: 10px;
+    }
+
+    &__selects{
+        height: 32px;
+        background-color: rgb(160, 200, 200);
+        margin: 12px 0;
+    }
+
+    &__footer{
+        padding: 22px 42px;
+        display: grid;
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        grid-template-columns: 300px 78px 113px;
+       
+        div{
+            align-self: center; 
+        }
+    }
+}
