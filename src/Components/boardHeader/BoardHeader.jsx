@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
 import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
+import { useDispatch, useSelector } from "react-redux";
+import { removeSelectAllStudents, selectAllStudents } from "../../store/selectStudents";
 import './BoardHeader.scss'
 
 const Arrovs = ({type}) =>{ 
@@ -19,13 +22,38 @@ const Arrovs = ({type}) =>{
   }
 
 export const BoardHeader = ({boardTitles}) => {
-
   const {name, id, className, score, speed,parents } = boardTitles
+  const users = useSelector(state => state.students.students) 
+  const selectUsers = useSelector(state => state.selectStudents.selectStudents)
+  const dispatch = useDispatch()
+  
+  const [isActiveCheckbox, setIsActiveCheckbox ] = useState(false)
+
+ useEffect(()=> {
+    if(isActiveCheckbox){
+        dispatch(selectAllStudents(users))
+    } else {
+        dispatch(removeSelectAllStudents())
+    }
+ },[isActiveCheckbox])
+
+ useEffect(() => {
+    if(selectUsers.length === users.length){
+        setIsActiveCheckbox(true)
+    } else {
+        setIsActiveCheckbox(false)
+    }
+ },[selectUsers])
 
     return (
       <div className='boardHeader'>
           <div className='boardHeader__checkBox'>
-              <input type='checkbox' id='selectOlluser'  defaultChecked={false}/>
+              <input 
+              type='checkbox' 
+              id='selectOlluser' 
+              checked={isActiveCheckbox}  
+              onChange={() => setIsActiveCheckbox(!isActiveCheckbox)}
+              />
           </div>
           <div className='boardHeader__value1 boardHeader__item-flex'>
               <div className="boardItem__value-title">{name}</div>
@@ -49,6 +77,7 @@ export const BoardHeader = ({boardTitles}) => {
           <div className='boardHeader__value6 boardHeader__item-flex'>
               <div className="boardHeader__value-title">{parents}</div>
           </div>
+          {selectUsers.length ? <div className='boardHeader__actions boardHeader__item-flex'>Actions</div> : null}
       </div>
     )
 }

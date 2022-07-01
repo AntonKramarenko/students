@@ -1,9 +1,8 @@
 @import '../../utils/colors.scss';
 
 .usersList {
-    border: 1px solid black;
-    overflow: hidden;
-    height: 70vh;
+    overflow: scroll;
+    height: 65vh;
 }
 
 .usersList .userItem:nth-child(even){

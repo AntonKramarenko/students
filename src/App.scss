@@ -12,7 +12,6 @@ body {
     color: $color-primary;
 }
 
-
 .app{
     display: flex;
     flex-direction: column;
@@ -27,6 +26,8 @@ body {
 
 .pageContainer{
     padding: 8px 40px 58px 40px;
+    position: relative;
+    height: 80vh;
 }
 
 .result-exellent{

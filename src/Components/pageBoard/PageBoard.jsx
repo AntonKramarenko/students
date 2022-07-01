@@ -1,6 +1,5 @@
 import { BoardHeader } from '../boardHeader/BoardHeader'
 import { UsersList } from '../usersList/UsersList'
-import './PageBoard.scss'
 
 export const PageBoard = () => {
 

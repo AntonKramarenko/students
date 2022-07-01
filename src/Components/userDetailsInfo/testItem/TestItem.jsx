@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import './TestItem.scss'
 
 export const TestItem = ({test, index}) => {
-    
+
     const {absent, concept, date, expSpeed,label,score,speed,total} = {...test}
+    const [isAbsent,setIsAbsent]= useState(absent)
 
 
     // console.log(absent);
@@ -10,7 +12,7 @@ export const TestItem = ({test, index}) => {
    
 
     return (
-    <tr className='testItem'>
+    <tr className={isAbsent? 'testItem absent' : 'testItem'}>
         <td>{index+1}.</td>
         <td>{label}</td>
         <td>{score ? score : 'NIL'}</td>
@@ -19,7 +21,14 @@ export const TestItem = ({test, index}) => {
         <td>{expSpeed}</td>
         <td>{concept}</td>
         <td>{date}</td>
-        <td className='testItem__checkbox'><input type="checkbox" checked={absent} disabled/></td>
+        <td className='testItem__checkbox'>
+          <input 
+            type="checkbox" 
+            checked={isAbsent} 
+            disabled={isAbsent}
+            onClick={() => setIsAbsent(!isAbsent)} 
+            />
+        </td>
     </tr>
     
   )

@@ -1,0 +1,22 @@
+@import '../../../utils/colors.scss';
+
+.userItemActions{
+    display: flex;
+    position: absolute;
+    right: 20px;
+
+    &__action {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: $color-bg-openItem;
+        margin-right: 8px;
+    }
+
+    &__action:hover{
+        color: $color-primary-dark;
+    }
+}

@@ -5,6 +5,8 @@
     justify-content: center;
     background-color: $color-primary-dark;
     padding: 3px 0;
+    flex-wrap: wrap;
+    position: relative;
 
     &__list{
         max-width: 845px;
@@ -13,4 +15,69 @@
         justify-content: space-between;
 
     }
+
+    &__body{
+        position: absolute;
+        z-index: 10;
+        top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-primary-midl;
+        color: $color-primary-light;
+        text-transform: uppercase;
+        font-weight: $fw-bold;
+        font-size: 12px;
+        padding: 12px 45px;
+        width: 100%;
+
+        .exportSCV{
+            color: $color-primary-light;
+            margin: 0;
+        }
+
+        &-btns{
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-cancel{
+            cursor: pointer;
+            padding: 3px 5px;
+            display: flex;
+            align-items: center;
+
+            svg{
+                width: 15px;
+                height: 14px;
+                margin-right: 5px;
+            }
+        }
+
+        &-cancel:hover{
+            box-shadow: $shadow;
+            border: $border;
+        }
+
+        &-archive {
+            cursor: pointer;
+            padding: 3px 5px;
+            display: flex;
+            align-items: center;
+
+            svg{
+                width: 12px;
+                height: 14px;
+                margin-right: 5px;
+            }
+        }
+
+        &-archive:hover {
+            box-shadow: $shadow;
+            border: $border;
+        }
+    }
+    
 }

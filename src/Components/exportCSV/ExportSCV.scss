@@ -1,0 +1,22 @@
+@import '../../utils/colors.scss';
+
+.exportSCV{
+    padding: 3px 5px;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    color: $color-primary-midl;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 130px;
+    border: $border;
+
+
+    svg{
+        margin-right: 8px;
+    }
+}
+
+.exportSCV:hover {
+    box-shadow: $shadow;
+}

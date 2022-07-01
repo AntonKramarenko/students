@@ -8,6 +8,7 @@
     cursor: pointer;
     position: relative;
     text-transform: uppercase;
+    
 
     &__title{
         margin-top: 8px;
@@ -28,6 +29,7 @@
         background-color: white;
         justify-content: center;
         box-shadow: $shadow;
+        z-index: 10;
 
 
         &-item{

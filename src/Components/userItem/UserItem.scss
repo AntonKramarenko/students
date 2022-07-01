@@ -15,15 +15,17 @@
     &__value6{
         display: flex;
         align-items: center;
-        
         svg{
             margin-right: 8px;
         }
     }
 
+
     &__Info{
-        align-self: center;
-        justify-self: center;
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
 
 }
