@@ -10,13 +10,17 @@
     cursor: pointer;
     margin-right: 130px;
     border: $border;
-
-
     svg{
         margin-right: 8px;
+    }
+
+    a{
+        color: inherit;
+        text-decoration: none;
     }
 }
 
 .exportSCV:hover {
+    color: $color-primary-dark;
     box-shadow: $shadow;
 }

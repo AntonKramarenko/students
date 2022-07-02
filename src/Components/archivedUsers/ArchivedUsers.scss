@@ -1,0 +1,25 @@
+@import '../../utils/colors.scss';
+
+.archivedUsers{
+
+    &__title{
+        margin: 10px 0;
+        text-transform: uppercase;
+        color: $color-primary-dark;
+    }
+
+    .userItem{
+        color: $color-primary-midl;
+        background-color: $color-primary-light;
+
+
+        .result-weak{
+            color: inherit;
+        }
+
+        .result-unsatisfactory{
+            color: inherit;
+        }
+    }
+
+}

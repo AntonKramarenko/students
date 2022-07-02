@@ -3,6 +3,7 @@
 .usersList {
     overflow: scroll;
     height: 65vh;
+    position: relative;
 }
 
 .usersList .userItem:nth-child(even){
