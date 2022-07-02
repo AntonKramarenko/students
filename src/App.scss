@@ -20,6 +20,8 @@ body {
 
 .wrap{
     width: 1440px;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -27,6 +29,7 @@ body {
 .pageContainer{
     padding: 8px 40px 58px 40px;
     position: relative;
+    height: 100%;
 }
 
 .result-exellent{

@@ -4,7 +4,6 @@ import { HiDocumentDownload } from "react-icons/hi";
 
 export const ExportSCV = ({info, headers, nameExport}) => {
 
-  console.log(nameExport);
   const csvReport = {
     headers: headers,
     data: info
