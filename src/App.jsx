@@ -1,8 +1,9 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import './App.scss'
 import { Header } from './components/header/Header'
 import { SubHeader } from './components/subHeader/SubHeader'
 import { Students } from './pages/Students'
+import './App.scss'
+import './styles/resultsColor.scss'
 
 export const App = () => {
   return (
@@ -20,4 +21,3 @@ export const App = () => {
     </div>
   )
 }
-

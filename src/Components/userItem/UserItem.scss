@@ -1,11 +1,10 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 
 .userItem{
     padding: 14px 25px;
     display: grid;
     grid-template-columns: 10px 300px 100px 48px 100px 112px 384px 1fr;
     gap: 25px;
-
 
     &__value3{
         align-self: center;
@@ -20,13 +19,11 @@
         }
     }
 
-
     &__Info{
         position: relative;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
     }
-
 }
 

@@ -1,18 +1,12 @@
 import { useState } from 'react'
-import './TestItem.scss'
+import './AssessmentItem.scss'
 
-export const TestItem = ({test, index}) => {
-
+export const AssessmentItem = ({test, index}) => {
     const {absent, concept, date, expSpeed,label,score,speed,total} = {...test}
     const [isAbsent,setIsAbsent]= useState(absent)
 
-
-    // console.log(absent);
-
-   
-
     return (
-    <tr className={isAbsent? 'testItem absent' : 'testItem'}>
+      <tr className={isAbsent? 'assessmentItem absent' : 'assessmentItem'}>
         <td>{index+1}.</td>
         <td>{label}</td>
         <td>{score ? score : 'NIL'}</td>
@@ -21,7 +15,7 @@ export const TestItem = ({test, index}) => {
         <td>{expSpeed}</td>
         <td>{concept}</td>
         <td>{date}</td>
-        <td className='testItem__checkbox'>
+        <td className='assessmentItem__checkbox'>
           <input 
             type="checkbox" 
             checked={isAbsent} 
@@ -29,7 +23,7 @@ export const TestItem = ({test, index}) => {
             onClick={() => setIsAbsent(!isAbsent)} 
             />
         </td>
-    </tr>
+      </tr>
     
   )
 }

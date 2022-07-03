@@ -1,7 +1,6 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 
 .archivedUsers{
-
     &__title{
         margin: 10px 0;
         text-transform: uppercase;
@@ -12,14 +11,17 @@
         color: $color-primary-midl;
         background-color: $color-primary-light;
 
-
+        .result-exellent{
+            color: inherit;
+        }
+        .result-good{
+            color: inherit;
+        }
         .result-weak{
             color: inherit;
         }
-
         .result-unsatisfactory{
             color: inherit;
         }
     }
-
 }

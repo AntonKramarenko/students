@@ -1,8 +1,7 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 .pageHeader{
     display: flex;
     justify-content: space-between;
-
 
     &__title{
         text-transform: uppercase;

@@ -6,7 +6,6 @@ import selectStudentsReducer from './selectStudents'
 import sortStudents from "./sortStudents";
 import archivedStudents from "./archivedStudents";
 
-
 export default configureStore({
     reducer: {
         searchValue: valueReducer,

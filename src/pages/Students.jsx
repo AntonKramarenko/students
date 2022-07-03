@@ -4,7 +4,7 @@ import { CustomLoader } from "../components/loader/CustomLoader"
 import { PageBoard } from "../components/pageBoard/PageBoard"
 import { PageHeader } from "../components/pageHeader/PageHeader"
 import { Pagination } from "../components/pagination/Pagination"
-import { GET_USERS } from "../config"
+import { GET_STUDENTS_INFO_URL } from "../constants/routes"
 import { setTotalCount, setTotalPages } from "../store/paginations"
 import { setStudents } from "../store/students"
 
@@ -18,12 +18,13 @@ export const Students = () => {
   const dispatch = useDispatch()
 
   useEffect(()=> {
-    fetch(GET_USERS(currentPage,userOnPage,searchValue,sortBy,sortDir)).then(res => res.json().then(data => {
+    fetch(GET_STUDENTS_INFO_URL(currentPage,userOnPage,searchValue,sortBy,sortDir)).then(res => res.json().then(data => {
       dispatch(setTotalCount(data.totalCount))
       dispatch(setTotalPages(data.totalPages))
       dispatch(setStudents(data.data))
       setIsLoading(false)
     })).catch(e => console.log('GET STUDENTS', e))
+    // eslint-disable-next-line
   }, [currentPage, userOnPage,searchValue,sortBy,sortDir])
 
   return (

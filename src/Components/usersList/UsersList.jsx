@@ -9,9 +9,7 @@ export const UsersList = () => {
 
   return (
     <div className='usersList'>
-        {
-          users.map(user =>  <UserItem key={user.id} info={user}/>)
-        }
+        {users.map(user =>  <UserItem key={user.id} info={user}/>)}
         {archivedStudents.length > 0 
           ? <ArchivedUsers selectUsers={archivedStudents}/> 
           :null

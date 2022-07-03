@@ -1,4 +1,4 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 
 .customSearch{
     max-width: 500px;
@@ -15,11 +15,9 @@
         width: 100%;
         padding: 3px 0;
         background-color: $color-bg-openItem ;
-        
     }
 
     input:focus{
         outline: none;
     }
-
 }

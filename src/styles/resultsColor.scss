@@ -1,0 +1,13 @@
+@import './colors.scss';
+.result-exellent{
+    color: $color-result-1;
+}
+.result-good{
+    color: $color-result-2;
+}
+.result-weak{
+    color: $color-result-3;
+}
+.result-unsatisfactory{
+    color: $color-result-4;
+}

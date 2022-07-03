@@ -2,7 +2,6 @@ import './HeaderLinks.scss'
 import { HeaderLink } from './headerLink/HeaderLink'
 
 export const HeaderLinks = () => {
-
     const links = [
         {name: 'Analytics', to: '/analytics'},
         {name: 'Gradebooks', to: '/gradebooks'},
@@ -17,6 +16,5 @@ export const HeaderLinks = () => {
             {links.map(link => <HeaderLink key={link.name} name={link.name} to={link.to}/>)}
         </ul>
     </nav>
-   
   )
 }

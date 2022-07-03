@@ -1,16 +1,14 @@
-import { CSVLink, CSVDownload } from "react-csv";
-import './ExportSCV.scss'
+import { CSVLink } from "react-csv";
 import { HiDocumentDownload } from "react-icons/hi";
+import './CSVExporter.scss'
 
-export const ExportSCV = ({info, headers, nameExport}) => {
-
+export const CSVExporter = ({info, headers, nameExport}) => {
   const csvReport = {
     headers: headers,
     data: info
   }
-
   return (
-    <div className='exportSCV'>
+    <div className='CSVExporter'>
         <HiDocumentDownload/>
         <CSVLink  
           {...csvReport}

@@ -1,6 +1,6 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 
-.arrovs{
+.clickSortOrderToggler{
     &__sortByName{
         display: flex;
         flex-direction: column;
@@ -20,12 +20,10 @@
     &__sortByName:hover{
         color: $color-primary-dark;
 
-        span{
-            color: $color-primary-dark;
-        }
+        span{color: $color-primary-dark;}
     }
 
-    &__sortByArrov{
+    &__sortByArrow{
         display: flex;
         flex-direction: column;
         cursor: pointer;
@@ -34,8 +32,6 @@
             width: 8px;
             height: 8px;
         }
-        svg:hover{
-            color:$color-primary-dark;
-        }
+        svg:hover{color:$color-primary-dark;}
     }
 }

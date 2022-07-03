@@ -4,7 +4,6 @@ const initialState = {
     archivedStudents: []
 }
 
-
 const archivedStudentsSlice = createSlice({
     name: 'archivedStudents',
     initialState,

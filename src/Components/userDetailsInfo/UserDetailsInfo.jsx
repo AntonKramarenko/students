@@ -1,11 +1,8 @@
 import { addColorScore, addColorSpeed } from '../userItem/addColorsValue';
-import { TestBoard } from './testBoard/TestBoard'
+import { AssessmentBoard } from './assessmentBoard/AssessmentBoard'
 import './UserDetailsInfo.scss'
 
 export const UserDetailsInfo = ({name, id, tests,score, speed}) => {
-
-  console.log(score);
-
   return (
     <div className='userDetailsInfo'>
             <div className="userDetailsInfo__person">
@@ -20,7 +17,7 @@ export const UserDetailsInfo = ({name, id, tests,score, speed}) => {
             <div className="userDetailsInfo__tests">
                 <div className="userDetailsInfo__tests-info"></div>
                 <div className="userDetailsInfo__tests-info"></div>
-                <TestBoard tests={tests}/>
+                <AssessmentBoard tests={tests}/>
             </div>
             <div className='userDetailsInfo__footer'>
               <div className="userDetailsInfo__footer-title">Average</div>

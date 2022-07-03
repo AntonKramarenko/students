@@ -1,4 +1,4 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 
 .customSelect{
     width: 104px;
@@ -9,7 +9,6 @@
     position: relative;
     text-transform: uppercase;
     
-
     &__title{
         margin-top: 8px;
         display: flex;
@@ -31,7 +30,6 @@
         box-shadow: $shadow;
         z-index: 10;
 
-
         &-item{
             width: 100%;
             display: flex;
@@ -47,8 +45,6 @@
             color: $color-primary-dark;
         }
     }
-
-
 }
 
 .active-select{

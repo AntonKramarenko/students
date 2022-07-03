@@ -21,10 +21,11 @@ export const Pagination = () => {
     dispatch(setUserOnPage(+value))
   }
 
-  const userOfUsers = () => {
+  const getpaginationItemsRange = () => {
     switch(userOnPage){
       case 20: return `${(currentPage*userOnPage)-19}-${currentPage*userOnPage}`;
       case 10: return `${(currentPage*userOnPage)-9}-${currentPage*userOnPage}`;
+      default: return null
     }
   }
   
@@ -35,7 +36,7 @@ export const Pagination = () => {
             <CustomSelect options={['10','20']}  selectHandler={setUserOnDoardHandler} />
         </div>
         <div className="pagination__users">
-            {userOfUsers()} of {totalStudents}
+            {getpaginationItemsRange()} of {totalStudents}
         </div>
         <div className="pagination__arrov">
             <IoChevronBackOutline onClick={() => setCurrentPageHandler(-1)}/>

@@ -1,4 +1,4 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 
 .subHeader{
     display: flex;
@@ -13,7 +13,6 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-
     }
 
     &__body{
@@ -31,7 +30,7 @@
         padding: 12px 45px;
         width: 100%;
 
-        .exportSCV{
+        .CSVExporter{
             color: $color-primary-light;
             margin: 0;
         }
@@ -79,5 +78,4 @@
             border: $border;
         }
     }
-    
 }

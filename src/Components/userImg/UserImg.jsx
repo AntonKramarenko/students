@@ -6,7 +6,7 @@ export const UserImg = () => {
   return (
     <div className='userImg'>
         <div className="userImg__img">
-            <img src={img} alt="User image" />
+            <img src={img} alt="User avatar" />
         </div>
         <IoCaretDownOutline/>
     </div>

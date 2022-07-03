@@ -18,6 +18,7 @@ export const addColorSpeed = (value) => {
         case 'as expected':
             return <span className='result-good'>{value}</span>
         case 'below expected':
-            return <span className='result-unsatisfactory'>{value}</span>
+            return <span className='result-unsatisfactory'>{value}</span>;
+        default: return null
     }
 }

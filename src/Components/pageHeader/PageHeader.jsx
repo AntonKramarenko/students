@@ -1,7 +1,6 @@
-import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { CustomSearch } from '../customSearch/CustomSearch';
-import { ExportSCV } from '../exportCSV/ExportSCV';
+import { CSVExporter } from '../CSVExporter/CSVExporter';
 import './PageHeader.scss';
 
 export const PageHeader = ({pageName}) => {
@@ -19,7 +18,7 @@ export const PageHeader = ({pageName}) => {
     <div className='pageHeader'>
         <h1 className="pageHeader__title">{pageName}</h1>
         <CustomSearch placeholder='Enter Student Name, Parent or ID here' />
-        <ExportSCV info={allStudents} headers={headers} nameExport='AllUsers'/>
+        <CSVExporter info={allStudents} headers={headers} nameExport='AllUsers'/>
     </div>
   )
 }

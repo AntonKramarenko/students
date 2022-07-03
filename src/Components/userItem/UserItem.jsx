@@ -8,25 +8,22 @@ import {  removeSelectStudent, selectStudent } from '../../store/selectStudents'
 import { UserItemActions } from './userItemActions/UserItemActions';
 
 export const UserItem = ({info}) => {
-
    const {name, id, score, speed,parents, tests} = info
    const [isInfoOpen,setIsInfoOpen] = useState(false)
    const [isChecked, setIsChacked] = useState(false)
    const selectUsers = useSelector(state => state.selectStudents.selectStudents)
-   const users = useSelector(state => state.students.students) 
-
    const dispatch = useDispatch()
 
     useEffect(() => {
        if(selectUsers.length){selectUsers.forEach(user =>{if(user.id === id){setIsChacked(true)}})
        } else {setIsChacked(false)}
+       // eslint-disable-next-line
    },[selectUsers])
 
    const selectUserHandler = () =>{
-    setIsChacked(!isChecked)
-
-    if(!isChecked){ dispatch(selectStudent(info))
-    } else {dispatch(removeSelectStudent(info))}
+        setIsChacked(!isChecked)
+        if(!isChecked){ dispatch(selectStudent(info))
+        } else {dispatch(removeSelectStudent(info))}
    }
 
 return (
@@ -57,7 +54,6 @@ return (
                 ?<IoCaretUpOutline onClick={() =>setIsInfoOpen(!isInfoOpen)}/> 
                 : <IoCaretDownOutline onClick={() =>setIsInfoOpen(!isInfoOpen)}/>
                 }
-              
           </div>
     </div>
     {isInfoOpen 

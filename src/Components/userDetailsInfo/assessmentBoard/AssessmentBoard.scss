@@ -1,6 +1,6 @@
-@import '../../../utils/colors.scss';
+@import '../../../styles/colors.scss';
 
-.testBoard{
+.assessmentBoard{
     border-top: 1px solid red;
     border-bottom: 2px solid red;
     width: 1100px;
@@ -14,10 +14,9 @@
         text-transform: uppercase; 
         list-style-type: none;
 
-
         li{
             display: flex;
-            justify-content: start;
+            justify-content: flex-start;
             align-items: center;
             div{
                 width: 12px;
@@ -48,11 +47,4 @@
             color:  $color-result-4;
             div{background-color: $color-result-4}}
      }
-
-    //  &__board{
-    //     margin-top: 15px;
-    //     display: grid;
-    //     grid-template-columns: 22px 300px 48px 113px 68px 120px 150px 110px 48px;
-    //     gap: 14px;
-    //  }
 }

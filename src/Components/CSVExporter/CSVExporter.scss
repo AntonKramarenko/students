@@ -1,6 +1,6 @@
-@import '../../utils/colors.scss';
+@import '../../styles/colors.scss';
 
-.exportSCV{
+.CSVExporter{
     padding: 3px 5px;
     font-weight: $fw-bold;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
     }
 }
 
-.exportSCV:hover {
+.CSVExporter:hover {
     color: $color-primary-dark;
     box-shadow: $shadow;
 }
