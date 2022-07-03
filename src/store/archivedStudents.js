@@ -1,17 +1,17 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    archivedStudents: []
+	archivedStudents: []
 }
 
 const archivedStudentsSlice = createSlice({
-    name: 'archivedStudents',
-    initialState,
-    reducers: {
-        addToArchive(state, action) {
-            state.archivedStudents.push(...action.payload)
-        }
-    }
+	name: 'archivedStudents',
+	initialState,
+	reducers: {
+		addToArchive(state, action) {
+			state.archivedStudents.push(...action.payload)
+		}
+	}
 })
 
 export const { addToArchive } = archivedStudentsSlice.actions
